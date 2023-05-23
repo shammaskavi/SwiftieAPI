@@ -1,6 +1,7 @@
 from tkinter import * 
 
 
+
 def get_quote():
     # response = requests.get("http://127.0.0.1:8000")
     # response.raise_for_status()
