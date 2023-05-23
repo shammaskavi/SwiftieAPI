@@ -1,11 +1,9 @@
 import requests
+import random
 
-response = requests.get("http://=api.open-notify.org/iss-now.json")
+
+response = requests.get("http://127.0.0.1:8000/")
 response.raise_for_status()
 
 data = response.json()
-# data = response.json()['iss_position']
-
-longitude = data["iss_position"]["longitude"]
-latitude = data["iss_position"]["latitude"]
-print(data)
+print(data[random.randint(0, 6)]['lyric'])
